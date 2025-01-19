@@ -1,0 +1,25 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "Personal website for portfolio, interests and knowledgebase",
+  "main": "script.js",
+  "scripts": {
+    "watch_sass": "node-sass ./sass/main.scss ./css/styles.css -w",
+    "dev_server": "live-server",
+    "dev": "npm-run-all --parallel watch_sass dev_server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JibranAdvany/personal_site.git"
+  },
+  "author": "Jibran Advani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JibranAdvany/personal_site/issues"
+  },
+  "homepage": "https://github.com/JibranAdvany/personal_site#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
