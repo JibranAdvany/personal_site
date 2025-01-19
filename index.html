@@ -3,9 +3,426 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Jibran Advani</title>
   </head>
   <body>
-    <h1>Personal Site of Jibran Advani</h1>
+    <header class="header">
+      <div class="header__container">
+        <!-- LOGO -->
+        <div class="header__logoBox">
+          <img
+            src="./assets/logos/logo_white.png"
+            alt="Logo of Jibran Advani"
+            class="header__logo"
+          />
+
+          <h1 class="header__heading">Jibran Advani</h1>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="header__navigation">
+          <a href="#" class="header__navItem btn btn--light btn--headerNav"
+            >Projects</a
+          >
+          <a href="#" class="header__navItem btn btn--light btn--headerNav"
+            >in-progress</a
+          >
+          <a href="#" class="header__navItem btn btn--light btn--headerNav"
+            >Blog</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <section class="aboutMe">
+          <div class="aboutMe__holder">
+            <h2 class="sectionHeading sectionHeading--dark">About me</h2>
+
+            <div class="aboutMe__container">
+              <!-- PHOTO -->
+              <div class="aboutMe__photoHolder">
+                <img
+                  src="./assets/imgs/photo.jpg"
+                  alt="Photo of Jibran Advani"
+                  class="aboutMe__photo"
+                />
+              </div>
+
+              <!-- CONTENT -->
+              <div class="aboutMe__content">
+                <p class="paragraph paragraph--dark">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  optio harum illum fugit, culpa, fugiat necessitatibus delectus
+                  magni minus, voluptates aliquam distinctio tenetur
+                  reprehenderit dolorem?
+                </p>
+
+                <p class="paragraph paragraph--dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat temporibus, exercitationem soluta cupiditate provident
+                  cumque quod veniam, ipsa rem, dolorem nemo nulla! Dolore
+                  consequuntur rem vero fugiat suscipit sunt!
+                </p>
+
+                <p class="paragraph paragraph--dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid dolor voluptatem quas deleniti suscipit, beatae nam
+                  veniam temporibus ratione optio quibusdam earum
+                  necessitatibus? Magni, ullam doloribus. Et velit ratione alias
+                  tempore quam sunt voluptatibus quasi.
+                </p>
+
+                <p class="paragraph paragraph--dark">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur eius labore eos saepe. Quod dolor voluptates eius
+                  placeat.
+                </p>
+              </div>
+            </div>
+
+            <a href="#" class="aboutMe__action btn btn--dark"
+              >Read more about &rarr;</a
+            >
+          </div>
+        </section>
+
+        <section class="interests">
+          <div class="interests__holder">
+            <h2 class="sectionHeading sectionHeading--light">Interests</h2>
+
+            <div class="interests__container">
+              <!-- PROGRAMMING -->
+              <div class="card card--light">
+                <div class="card__pictureHolder">
+                  <img
+                    src="./assets/imgs/programming.png"
+                    alt="Illustration of the programming interest"
+                    class="card__picture"
+                  />
+                </div>
+
+                <div class="card__content">
+                  <h3 class="cardHeading cardHeading--dark">Programming</h3>
+
+                  <p class="paragraph paragraph--dark">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam molestias omnis, placeat iste fugit sint, velit
+                    itaque illo veritatis deserunt atque, ad perspiciatis!
+                    Molestias, assumenda! Laboriosam, cupiditate.
+                  </p>
+                </div>
+
+                <a href="#" class="card__action btn btn--dark"
+                  >See space &rarr;</a
+                >
+              </div>
+
+              <!-- GAMING -->
+              <div class="card card--light">
+                <div class="card__pictureHolder">
+                  <img
+                    src="./assets/imgs/gaming.png"
+                    alt="Illustration of the gaming interest"
+                    class="card__picture"
+                  />
+                </div>
+
+                <div class="card__content">
+                  <h3 class="cardHeading cardHeading--dark">gaming</h3>
+
+                  <p class="paragraph paragraph--dark">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam, assumenda cupiditate provident maiores aperiam
+                    molestias officia. Animi vitae molestiae possimus quaerat
+                    tempora illo ipsa nulla debitis eius. Commodi, soluta
+                    explicabo!
+                  </p>
+                </div>
+
+                <a href="#" class="card__action btn btn--dark"
+                  >See space &rarr;</a
+                >
+              </div>
+
+              <!-- CRICKET -->
+              <div class="card card--light">
+                <div class="card__pictureHolder">
+                  <img
+                    src="./assets/imgs/cricket.png"
+                    alt="Illustration of the cricket interest"
+                    class="card__picture"
+                  />
+                </div>
+
+                <div class="card__content">
+                  <h3 class="cardHeading cardHeading--dark">cricket</h3>
+
+                  <p class="paragraph paragraph--dark">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vitae vel adipisci quo atque veniam nemo earum? Soluta fuga
+                    debitis vel atque, ea veritatis.
+                  </p>
+                </div>
+
+                <a href="#" class="card__action btn btn--dark"
+                  >See space &rarr;</a
+                >
+              </div>
+            </div>
+
+            <a href="#" class="interests__action btn btn--light"
+              >Explore my interets space &rarr;</a
+            >
+          </div>
+        </section>
+
+        <section class="portfolio">
+          <div class="portfolio__holder">
+            <h2 class="sectionHeading sectionHeading--dark">Portfolio</h2>
+
+            <div class="portfolio__container">
+              <div class="projectCard projectCard--dark">
+                <div class="projectCard__content">
+                  <h3
+                    class="projectCard__heading cardHeading cardHeading--light"
+                  >
+                    Side Programmer
+                  </h3>
+                  <p class="paragraph paragraph--light">
+                    This is the live blog that I have coded and currently
+                    maintaining. The blog is about various tech topics which
+                    range from front-end to back-end.
+                  </p>
+                </div>
+
+                <div class="projectCard__type projectCard__type--light">
+                  <h3 class="subHeading subHeading--light">Project Type</h3>
+                  <small class="tag tag--light">Web Development</small>
+                </div>
+
+                <div
+                  class="projectCard__technologies projectCard__technologies--light"
+                >
+                  <h3 class="subHeading subHeading--light">Technology Used</h3>
+
+                  <div class="projectCard__tagsHolder">
+                    <small class="tag tag--light">Next JS</small>
+                    <small class="tag tag--light">Tailwind CSS</small>
+                    <small class="tag tag--light">Contentful CMS</small>
+                  </div>
+                </div>
+
+                <div class="projectCard__actions">
+                  <a href="#" class="btn btn--light"
+                    ><img src="./assets/imgs/github.png" alt="Github logo" />
+                    Github</a
+                  >
+                  <a href="#" class="btn btn--light"
+                    >Live view<img
+                      src="./assets/imgs/newTab.png"
+                      alt="Github logo"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="projectCard projectCard--dark">
+                <div class="projectCard__content">
+                  <h3
+                    class="projectCard__heading cardHeading cardHeading--light"
+                  >
+                    Natours
+                  </h3>
+                  <p class="paragraph paragraph--light">
+                    This is the landing page of a fictional company that offers
+                    tours. The project is front-end only and is built in order
+                    to learn Sass and advanced CSS concepts as part of an online
+                    course.
+                  </p>
+                </div>
+
+                <div class="projectCard__type projectCard__type--light">
+                  <h3 class="subHeading subHeading--light">Project Type</h3>
+                  <small class="tag tag--light">Web Development</small>
+                </div>
+
+                <div
+                  class="projectCard__technologies projectCard__technologies--light"
+                >
+                  <h3 class="subHeading subHeading--light">Technology Used</h3>
+
+                  <div class="projectCard__tagsHolder">
+                    <small class="tag tag--light">HTML</small>
+                    <small class="tag tag--light">CSS</small>
+                    <small class="tag tag--light">Sass</small>
+                  </div>
+                </div>
+
+                <div class="projectCard__actions">
+                  <a href="#" class="btn btn--light"
+                    ><img src="./assets/imgs/github.png" alt="Github logo" />
+                    Github</a
+                  >
+                  <a href="#" class="btn btn--light"
+                    >Live view<img
+                      src="./assets/imgs/newTab.png"
+                      alt="Github logo"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="projectCard projectCard--dark">
+                <div class="projectCard__content">
+                  <h3
+                    class="projectCard__heading cardHeading cardHeading--light"
+                  >
+                    Theme Toggle
+                  </h3>
+                  <p class="paragraph paragraph--light">
+                    This is the landing page of a fictional company that offers
+                    software development and design services. The project is
+                    front-end only and is built in order to learn Javascript
+                    concepts and to learn the theme change effect on a website.
+                  </p>
+                </div>
+
+                <div class="projectCard__type projectCard__type--light">
+                  <h3 class="subHeading subHeading--light">Project Type</h3>
+                  <small class="tag tag--light">Web Development</small>
+                </div>
+
+                <div
+                  class="projectCard__technologies projectCard__technologies--light"
+                >
+                  <h3 class="subHeading subHeading--light">Technology Used</h3>
+
+                  <div class="projectCard__tagsHolder">
+                    <small class="tag tag--light">HTML</small>
+                    <small class="tag tag--light">CSS</small>
+                    <small class="tag tag--light">Javascript</small>
+                  </div>
+                </div>
+
+                <div class="projectCard__actions">
+                  <a href="#" class="btn btn--light"
+                    ><img src="./assets/imgs/github.png" alt="Github logo" />
+                    Github</a
+                  >
+                  <a href="#" class="btn btn--light"
+                    >Live view<img
+                      src="./assets/imgs/newTab.png"
+                      alt="Github logo"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="projectCard projectCard--dark">
+                <div class="projectCard__content">
+                  <h3
+                    class="projectCard__heading cardHeading cardHeading--light"
+                  >
+                    Text to Speech
+                  </h3>
+                  <p class="paragraph paragraph--light">
+                    This is the page that is built in order to learn how to
+                    perform text to speech using Javascript on the website.
+                  </p>
+                </div>
+
+                <div class="projectCard__type projectCard__type--light">
+                  <h3 class="subHeading subHeading--light">Project Type</h3>
+                  <small class="tag tag--light">Web Development</small>
+                </div>
+
+                <div
+                  class="projectCard__technologies projectCard__technologies--light"
+                >
+                  <h3 class="subHeading subHeading--light">Technology Used</h3>
+
+                  <div class="projectCard__tagsHolder">
+                    <small class="tag tag--light">HTML</small>
+                    <small class="tag tag--light">CSS</small>
+                    <small class="tag tag--light">Javascript</small>
+                  </div>
+                </div>
+
+                <div class="projectCard__actions">
+                  <a href="#" class="btn btn--light"
+                    ><img src="./assets/imgs/github.png" alt="Github logo" />
+                    Github</a
+                  >
+                  <a href="#" class="btn btn--light"
+                    >Live view<img
+                      src="./assets/imgs/newTab.png"
+                      alt="Github logo"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="projectCard projectCard--dark">
+                <div class="projectCard__content">
+                  <h3
+                    class="projectCard__heading cardHeading cardHeading--light"
+                  >
+                    Picture in Picture
+                  </h3>
+                  <p class="paragraph paragraph--light">
+                    This project is built in order to learn how to understand
+                    the picture in picture API of the browser. This project only
+                    works on chrome.
+                  </p>
+                </div>
+
+                <div class="projectCard__type projectCard__type--light">
+                  <h3 class="subHeading subHeading--light">Project Type</h3>
+                  <small class="tag tag--light">Web Development</small>
+                </div>
+
+                <div
+                  class="projectCard__technologies projectCard__technologies--light"
+                >
+                  <h3 class="subHeading subHeading--light">Technology Used</h3>
+
+                  <div class="projectCard__tagsHolder">
+                    <small class="tag tag--light">HTML</small>
+                    <small class="tag tag--light">CSS</small>
+                    <small class="tag tag--light">Javascript</small>
+                  </div>
+                </div>
+
+                <div class="projectCard__actions">
+                  <a href="#" class="btn btn--light"
+                    ><img src="./assets/imgs/github.png" alt="Github logo" />
+                    Github</a
+                  >
+                  <a href="#" class="btn btn--light"
+                    >Live view<img
+                      src="./assets/imgs/newTab.png"
+                      alt="Github logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="portfolio__action btn btn--dark"
+              >See complete portfolio &rarr;</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
+e

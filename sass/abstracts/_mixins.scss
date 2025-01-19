@@ -1,0 +1,29 @@
+@mixin centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin maxWidthFull {
+  max-width: $maxWidthFull;
+}
+
+@mixin defaultSectionStyles {
+  padding: 5rem 0;
+  @include centerContainer;
+}
+
+@mixin defaultDarkSectionStyles {
+  padding: 5rem 0;
+  @include centerContainer;
+  background-color: $colorPrimaryDark;
+}
+
+@mixin defaultHolderStyles {
+  @include maxWidthFull;
+  flex-basis: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

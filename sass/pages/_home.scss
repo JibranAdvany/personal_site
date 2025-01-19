@@ -1,0 +1,78 @@
+.aboutMe {
+  @include defaultSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .aboutMe__photoHolder {
+      flex-basis: 20%;
+      overflow: hidden;
+
+      .aboutMe__photo {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .aboutMe__content {
+      flex-basis: 80%;
+      padding: 0 6rem;
+    }
+  }
+
+  &__action {
+    align-self: flex-end;
+    margin-right: 6rem;
+  }
+}
+
+.interests {
+  @include defaultDarkSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__action {
+    align-self: center;
+  }
+}
+
+.portfolio {
+  @include defaultSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__action {
+    align-self: center;
+  }
+}

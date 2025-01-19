@@ -1,0 +1,12 @@
+.paragraph {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &--dark {
+    color: $colorPrimaryDark;
+  }
+
+  &--light {
+    color: $colorPrimaryLight;
+  }
+}

@@ -1,0 +1,18 @@
+@import "./base/base";
+
+@import "./abstracts/variables";
+@import "./abstracts/typography";
+@import "./abstracts/mixins";
+@import "./abstracts/utilities";
+
+@import "./components/btn";
+@import "./components/cards";
+@import "./components/headings";
+@import "./components/paragraphs";
+@import "./components/tags";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/mainBody";
+
+@import "./pages/home";

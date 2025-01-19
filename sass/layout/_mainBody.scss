@@ -1,0 +1,8 @@
+.main {
+  @include centerContainer;
+  font-size: $defaultFontSize;
+
+  &__container {
+    flex-basis: 100%;
+  }
+}

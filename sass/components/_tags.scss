@@ -1,0 +1,12 @@
+.tag {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-radius: $borderRadiusSmall;
+
+  &--light {
+    color: $colorPrimaryDark;
+    background-color: $colorPrimaryLight;
+  }
+}

@@ -1,0 +1,83 @@
+.card {
+  max-width: 30rem;
+  border-radius: $borderRadiusMedium;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__pictureHolder {
+    width: 50%;
+    margin: 0 auto;
+
+    .card__picture {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    & .cardHeading {
+      text-align: center;
+    }
+  }
+
+  &__action {
+    margin-top: auto;
+    align-self: center;
+  }
+
+  &--light {
+    background-color: $colorPrimaryLight;
+  }
+}
+
+.projectCard {
+  max-width: 45%;
+  padding: 3rem;
+  border-radius: $borderRadiusMedium;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    & .projectCardHeading {
+      text-align: center;
+    }
+  }
+
+  &__tagsHolder {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 2rem;
+    margin-top: auto;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &--dark {
+    background-color: $colorPrimaryDark;
+  }
+
+  &--light {
+    background-color: $colorPrimaryLight;
+  }
+}
