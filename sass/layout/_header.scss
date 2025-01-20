@@ -10,6 +10,10 @@
 
   @include centerContainer;
 
+  a {
+    text-decoration: none;
+  }
+
   &__container {
     @include maxWidthFull;
     flex-basis: 100%;

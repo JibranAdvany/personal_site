@@ -25,5 +25,15 @@
 
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
+}
+
+@mixin girdItemDefaultStyles {
+  background-color: $colorPrimaryDark;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }

@@ -76,3 +76,144 @@
     align-self: center;
   }
 }
+
+.progress {
+  @include defaultDarkSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+
+    .paragraph {
+      max-width: 60%;
+    }
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__action {
+    align-self: center;
+  }
+}
+
+.blog {
+  @include defaultSectionStyles;
+  padding: 5rem;
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+  }
+
+  &__html {
+    @include girdItemDefaultStyles;
+
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+  }
+
+  &__css {
+    @include girdItemDefaultStyles;
+
+    grid-row: 1 / span 3;
+    grid-column: 4 / span 3;
+  }
+
+  &__gaming {
+    @include girdItemDefaultStyles;
+
+    grid-row: 4 / span 4;
+    grid-column: 1 / 2;
+  }
+
+  &__blog {
+    @include girdItemDefaultStyles;
+    background-color: $colorPrimaryLight;
+
+    grid-row: 4 / span 4;
+    grid-column: 2 / span 4;
+  }
+
+  &__javascript {
+    @include girdItemDefaultStyles;
+
+    grid-row: 4 / span 4;
+    grid-column: 6 / 7;
+  }
+
+  &__cricket {
+    @include girdItemDefaultStyles;
+
+    grid-row: 8 / span 3;
+    grid-column: 1 / span 3;
+  }
+
+  &__history {
+    @include girdItemDefaultStyles;
+
+    grid-row: 8 / span 3;
+    grid-column: 4 / span 3;
+  }
+}
+
+.knowledgebase {
+  @include defaultDarkSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+
+    .paragraph {
+      max-width: 60%;
+    }
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__action {
+    align-self: center;
+  }
+}
+
+.connect {
+  @include defaultSectionStyles;
+
+  &__holder {
+    @include defaultHolderStyles;
+
+    text-align: center;
+
+    .paragraph {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  &__container {
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__action {
+    align-self: center;
+  }
+}

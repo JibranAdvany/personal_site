@@ -35,6 +35,10 @@
   &--light {
     background-color: $colorPrimaryLight;
   }
+
+  &--dark {
+    background-color: $colorPrimaryDark;
+  }
 }
 
 .projectCard {
@@ -79,5 +83,71 @@
 
   &--light {
     background-color: $colorPrimaryLight;
+  }
+}
+
+.progressCard {
+  width: 25%;
+  padding: 3rem;
+  border-radius: $borderRadiusMedium;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__progressList {
+    list-style: none;
+  }
+
+  &__progressItem {
+    padding: 0.5rem 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid #888;
+    }
+  }
+
+  &__action {
+    margin-top: auto;
+    align-self: center;
+  }
+
+  &--dark {
+    background-color: $colorPrimaryDark;
+  }
+
+  &--light {
+    background-color: $colorPrimaryLight;
+  }
+}
+
+.knowledgebase__item {
+  &:link,
+  &:visited {
+    border-radius: $borderRadiusSmall;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+  }
+
+  &--dark {
+    background-color: $colorPrimaryDark;
+    color: $colorPrimaryLight;
+    border: 0.1rem solid $colorPrimaryLight;
+  }
+
+  &--light {
+    color: $colorPrimaryDark;
+    border: 0.1rem solid $colorPrimaryDark;
   }
 }

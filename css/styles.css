@@ -73,6 +73,8 @@ html {
     align-self: center; }
   .card--light {
     background-color: #fff; }
+  .card--dark {
+    background-color: #000; }
 
 .projectCard {
   max-width: 45%;
@@ -102,6 +104,50 @@ html {
     background-color: #000; }
   .projectCard--light {
     background-color: #fff; }
+
+.progressCard {
+  width: 25%;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .progressCard__progressList {
+    list-style: none; }
+  .progressCard__progressItem {
+    padding: 0.5rem 1rem; }
+    .progressCard__progressItem:not(:last-child) {
+      border-bottom: 0.1rem solid #888; }
+  .progressCard__action {
+    margin-top: auto;
+    align-self: center; }
+  .progressCard--dark {
+    background-color: #000; }
+  .progressCard--light {
+    background-color: #fff; }
+
+.knowledgebase__item:link, .knowledgebase__item:visited {
+  border-radius: 0.3rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  transition: transform 0.3s; }
+
+.knowledgebase__item:hover {
+  transform: translateY(-0.3rem); }
+
+.knowledgebase__item:active {
+  transform: translateY(-0.1rem); }
+
+.knowledgebase__item--dark {
+  background-color: #000;
+  color: #fff;
+  border: 0.1rem solid #fff; }
+
+.knowledgebase__item--light {
+  color: #000;
+  border: 0.1rem solid #000; }
 
 .sectionHeading {
   font-size: 4rem;
@@ -152,6 +198,29 @@ html {
     color: #000;
     background-color: #fff; }
 
+.footer {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; }
+  .footer__holder {
+    max-width: 144rem;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center; }
+  .footer__logo {
+    width: 10rem; }
+  .footer__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; }
+  .footer--navItem {
+    text-transform: uppercase; }
+
 .header {
   background-color: #000;
   font-size: 1.6rem;
@@ -163,6 +232,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .header a {
+    text-decoration: none; }
   .header__container {
     max-width: 144rem;
     flex-basis: 100%;
@@ -207,7 +278,7 @@ html {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4rem; }
+    gap: 3rem; }
   .aboutMe__container {
     flex-basis: 100%;
     display: flex;
@@ -238,7 +309,7 @@ html {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4rem; }
+    gap: 3rem; }
   .interests__container {
     flex-basis: 100%;
     display: flex;
@@ -258,7 +329,7 @@ html {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4rem; }
+    gap: 3rem; }
   .portfolio__container {
     flex-basis: 100%;
     display: flex;
@@ -266,4 +337,158 @@ html {
     justify-content: center;
     gap: 3rem; }
   .portfolio__action {
+    align-self: center; }
+
+.progress {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; }
+  .progress__holder {
+    max-width: 144rem;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    .progress__holder .paragraph {
+      max-width: 60%; }
+  .progress__container {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; }
+  .progress__action {
+    align-self: center; }
+
+.blog {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem; }
+  .blog__grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem; }
+  .blog__html {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3; }
+  .blog__css {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 1 / span 3;
+    grid-column: 4 / span 3; }
+  .blog__gaming {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 4 / span 4;
+    grid-column: 1 / 2; }
+  .blog__blog {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #fff;
+    grid-row: 4 / span 4;
+    grid-column: 2 / span 4; }
+  .blog__javascript {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 4 / span 4;
+    grid-column: 6 / 7; }
+  .blog__cricket {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 8 / span 3;
+    grid-column: 1 / span 3; }
+  .blog__history {
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-row: 8 / span 3;
+    grid-column: 4 / span 3; }
+
+.knowledgebase {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; }
+  .knowledgebase__holder {
+    max-width: 144rem;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    .knowledgebase__holder .paragraph {
+      max-width: 60%; }
+  .knowledgebase__container {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; }
+  .knowledgebase__action {
+    align-self: center; }
+
+.connect {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .connect__holder {
+    max-width: 144rem;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center; }
+    .connect__holder .paragraph {
+      max-width: 60%;
+      margin: 0 auto; }
+  .connect__container {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; }
+  .connect__action {
     align-self: center; }
