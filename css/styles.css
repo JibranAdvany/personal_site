@@ -1,3 +1,9 @@
+/*
+0 to 600px -----------> Phone
+600 to 900px ---------> tab-port
+900 to 1200px --------> tab-land
+1200+ ----------------> default
+*/
 *,
 *::before,
 *::after {
@@ -7,6 +13,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 52.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -31,6 +46,9 @@ html {
   padding: 1rem 2rem;
   border-radius: 0.3rem;
   transition: transform 0.3s; }
+  @media (max-width: 52.25em) {
+    .btn:link, .btn:visited {
+      padding: 0.5rem 1rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem); }
@@ -56,6 +74,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 3rem; }
+  @media (max-width: 37.5em) {
+    .card {
+      padding: 2rem 1rem; } }
   .card__pictureHolder {
     width: 50%;
     margin: 0 auto; }
@@ -83,6 +104,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem; }
+  @media (max-width: 37.5em) {
+    .projectCard {
+      max-width: 100%; } }
   .projectCard__content {
     display: flex;
     flex-direction: column;
@@ -106,12 +130,22 @@ html {
     background-color: #fff; }
 
 .progressCard {
-  width: 25%;
+  min-width: 25%;
   padding: 3rem;
   border-radius: 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 2rem; }
+  @media (max-width: 93.75em) {
+    .progressCard {
+      padding: 2rem; } }
+  @media (max-width: 56.25em) {
+    .progressCard {
+      min-width: 35%; } }
+  @media (max-width: 37.5em) {
+    .progressCard {
+      min-width: 80%; } }
   .progressCard__progressList {
     list-style: none; }
   .progressCard__progressItem {
@@ -155,6 +189,12 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   line-height: 1; }
+  @media (max-width: 52.25em) {
+    .sectionHeading {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .sectionHeading {
+      font-size: 2.5rem; } }
   .sectionHeading--dark {
     color: #000; }
   .sectionHeading--light {
@@ -165,6 +205,12 @@ html {
   font-size: 3rem;
   text-transform: uppercase;
   line-height: 1; }
+  @media (max-width: 93.75em) {
+    .cardHeading {
+      font-size: 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .cardHeading {
+      font-size: 2rem; } }
   .cardHeading--dark {
     color: #000; }
   .cardHeading--light {
@@ -174,6 +220,9 @@ html {
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase; }
+  @media (max-width: 52.25em) {
+    .subHeading {
+      font-size: 1.8rem; } }
   .subHeading--dark {
     color: #000; }
   .subHeading--light {
@@ -203,7 +252,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000; }
+  background-color: #000;
+  font-size: 1.2rem; }
+  @media (max-width: 52.25em) {
+    .footer {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      padding: 3rem 0; } }
   .footer__holder {
     max-width: 144rem;
     flex-basis: 100%;
@@ -211,6 +267,16 @@ html {
     flex-direction: column;
     gap: 3rem;
     align-items: center; }
+    @media (max-width: 52.25em) {
+      .footer__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .footer__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .footer__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   .footer__logo {
     width: 10rem; }
   .footer__navigation {
@@ -218,6 +284,12 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .footer__navigation {
+        gap: 1rem; } }
   .footer--navItem {
     text-transform: uppercase; }
 
@@ -232,22 +304,51 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .header {
+      padding: 1.5rem 0; } }
   .header a {
     text-decoration: none; }
+    @media (max-width: 93.75em) {
+      .header a {
+        font-size: 1.4rem; } }
+  @media (max-width: 93.75em) {
+    .header {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
   .header__container {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    gap: 1.5rem; }
+    @media (max-width: 93.75em) {
+      .header__container {
+        font-size: 4rem; } }
+    @media (max-width: 52.25em) {
+      .header__container {
+        font-size: 3rem; } }
+    @media (max-width: 37.5em) {
+      .header__container {
+        justify-content: center; } }
   .header__logoBox {
     display: flex;
     align-items: center;
     column-gap: 2rem; }
+    @media (max-width: 52.25em) {
+      .header__logoBox {
+        column-gap: 1rem; } }
     .header__logoBox .header__logo {
       display: inline-block;
       width: 5rem; }
+      @media (max-width: 93.75em) {
+        .header__logoBox .header__logo {
+          width: 4rem; } }
+      @media (max-width: 52.25em) {
+        .header__logoBox .header__logo {
+          width: 3rem; } }
     .header__logoBox .header__heading {
       color: #fff;
       text-transform: uppercase;
@@ -255,10 +356,19 @@ html {
       font-weight: 300;
       letter-spacing: 0.3rem;
       line-height: 1; }
+      @media (max-width: 93.75em) {
+        .header__logoBox .header__heading {
+          font-size: 4rem; } }
+      @media (max-width: 52.25em) {
+        .header__logoBox .header__heading {
+          font-size: 3rem; } }
   .header__navigation {
     display: flex;
     align-items: center;
     column-gap: 2rem; }
+    @media (max-width: 52.25em) {
+      .header__navigation {
+        gap: 1rem; } }
 
 .main {
   display: flex;
@@ -273,30 +383,68 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 52.25em) {
+    .aboutMe {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .aboutMe {
+      padding: 3rem 0; } }
   .aboutMe__holder {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media (max-width: 52.25em) {
+      .aboutMe__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .aboutMe__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .aboutMe__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   .aboutMe__container {
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between; }
+    @media (max-width: 52.25em) {
+      .aboutMe__container {
+        flex-direction: column;
+        gap: 2rem; } }
     .aboutMe__container .aboutMe__photoHolder {
       flex-basis: 20%;
       overflow: hidden; }
+      @media (max-width: 52.25em) {
+        .aboutMe__container .aboutMe__photoHolder {
+          flex-basis: 100%;
+          width: 30%; } }
+      @media (max-width: 37.5em) {
+        .aboutMe__container .aboutMe__photoHolder {
+          width: 50%; } }
       .aboutMe__container .aboutMe__photoHolder .aboutMe__photo {
         display: block;
-        width: 100%; }
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
     .aboutMe__container .aboutMe__content {
       flex-basis: 80%;
       padding: 0 6rem; }
+      @media (max-width: 56.25em) {
+        .aboutMe__container .aboutMe__content {
+          padding: 0 3rem; } }
+      @media (max-width: 52.25em) {
+        .aboutMe__container .aboutMe__content {
+          padding: 0; } }
   .aboutMe__action {
     align-self: flex-end;
     margin-right: 6rem; }
+    @media (max-width: 37.5em) {
+      .aboutMe__action {
+        align-self: center;
+        margin-right: 0; } }
 
 .interests {
   padding: 5rem 0;
@@ -304,12 +452,28 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #000; }
+  @media (max-width: 52.25em) {
+    .interests {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .interests {
+      padding: 3rem 0; } }
   .interests__holder {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media (max-width: 52.25em) {
+      .interests__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .interests__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .interests__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   .interests__container {
     flex-basis: 100%;
     display: flex;
@@ -324,18 +488,38 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 52.25em) {
+    .portfolio {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .portfolio {
+      padding: 3rem 0; } }
   .portfolio__holder {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media (max-width: 52.25em) {
+      .portfolio__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .portfolio__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .portfolio__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
   .portfolio__container {
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem; }
+    @media (max-width: 37.5em) {
+      .portfolio__container {
+        flex-direction: column;
+        align-items: center; } }
   .portfolio__action {
     align-self: center; }
 
@@ -345,14 +529,33 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #000; }
+  @media (max-width: 52.25em) {
+    .progress {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .progress {
+      padding: 3rem 0; } }
   .progress__holder {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media (max-width: 52.25em) {
+      .progress__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .progress__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .progress__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
     .progress__holder .paragraph {
       max-width: 60%; }
+      @media (max-width: 56.25em) {
+        .progress__holder .paragraph {
+          max-width: 100%; } }
   .progress__container {
     flex-basis: 100%;
     display: flex;
@@ -368,12 +571,24 @@ html {
   justify-content: center;
   align-items: center;
   padding: 5rem; }
+  @media (max-width: 52.25em) {
+    .blog {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .blog {
+      padding: 3rem 0; } }
+  @media (max-width: 56.25em) {
+    .blog {
+      padding: 2.5rem; } }
   .blog__grid {
     width: 100%;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem; }
+    @media (max-width: 56.25em) {
+      .blog__grid {
+        gap: 1rem; } }
   .blog__html {
     background-color: #000;
     padding: 4rem 2rem;
@@ -384,6 +599,10 @@ html {
     gap: 1rem;
     grid-row: 1 / span 3;
     grid-column: 1 / span 3; }
+    @media (max-width: 52.25em) {
+      .blog__html {
+        grid-row: 5 / span 2;
+        grid-column: 1 / span 3; } }
   .blog__css {
     background-color: #000;
     padding: 4rem 2rem;
@@ -394,6 +613,10 @@ html {
     gap: 1rem;
     grid-row: 1 / span 3;
     grid-column: 4 / span 3; }
+    @media (max-width: 52.25em) {
+      .blog__css {
+        grid-row: 5 / span 2;
+        grid-column: 4 / span 3; } }
   .blog__gaming {
     background-color: #000;
     padding: 4rem 2rem;
@@ -404,6 +627,10 @@ html {
     gap: 1rem;
     grid-row: 4 / span 4;
     grid-column: 1 / 2; }
+    @media (max-width: 52.25em) {
+      .blog__gaming {
+        grid-row: 7 / span 2;
+        grid-column: 1 / span 3; } }
   .blog__blog {
     background-color: #000;
     padding: 4rem 2rem;
@@ -415,6 +642,10 @@ html {
     background-color: #fff;
     grid-row: 4 / span 4;
     grid-column: 2 / span 4; }
+    @media (max-width: 52.25em) {
+      .blog__blog {
+        grid-row: 1 / span 4;
+        grid-column: 1 / -1; } }
   .blog__javascript {
     background-color: #000;
     padding: 4rem 2rem;
@@ -425,6 +656,10 @@ html {
     gap: 1rem;
     grid-row: 4 / span 4;
     grid-column: 6 / 7; }
+    @media (max-width: 52.25em) {
+      .blog__javascript {
+        grid-row: 7 / span 2;
+        grid-column: 4 / span 3; } }
   .blog__cricket {
     background-color: #000;
     padding: 4rem 2rem;
@@ -435,6 +670,10 @@ html {
     gap: 1rem;
     grid-row: 8 / span 3;
     grid-column: 1 / span 3; }
+    @media (max-width: 52.25em) {
+      .blog__cricket {
+        grid-row: 9 / span 2;
+        grid-column: 1 / span 3; } }
   .blog__history {
     background-color: #000;
     padding: 4rem 2rem;
@@ -445,6 +684,10 @@ html {
     gap: 1rem;
     grid-row: 8 / span 3;
     grid-column: 4 / span 3; }
+    @media (max-width: 52.25em) {
+      .blog__history {
+        grid-row: 9 / span 2;
+        grid-column: 4 / span 3; } }
 
 .knowledgebase {
   padding: 5rem 0;
@@ -452,14 +695,33 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #000; }
+  @media (max-width: 52.25em) {
+    .knowledgebase {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .knowledgebase {
+      padding: 3rem 0; } }
   .knowledgebase__holder {
     max-width: 144rem;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media (max-width: 52.25em) {
+      .knowledgebase__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .knowledgebase__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .knowledgebase__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
     .knowledgebase__holder .paragraph {
       max-width: 60%; }
+      @media (max-width: 56.25em) {
+        .knowledgebase__holder .paragraph {
+          max-width: 100%; } }
   .knowledgebase__container {
     flex-basis: 100%;
     display: flex;
@@ -474,6 +736,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 52.25em) {
+    .connect {
+      padding: 4rem 0; } }
+  @media (max-width: 37.5em) {
+    .connect {
+      padding: 3rem 0; } }
   .connect__holder {
     max-width: 144rem;
     flex-basis: 100%;
@@ -481,6 +749,16 @@ html {
     flex-direction: column;
     gap: 3rem;
     text-align: center; }
+    @media (max-width: 52.25em) {
+      .connect__holder {
+        gap: 2rem; } }
+    @media (max-width: 37.5em) {
+      .connect__holder {
+        gap: 1.5rem; } }
+    @media (max-width: 93.75em) {
+      .connect__holder {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
     .connect__holder .paragraph {
       max-width: 60%;
       margin: 0 auto; }

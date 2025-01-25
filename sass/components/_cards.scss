@@ -7,6 +7,10 @@
   flex-direction: column;
   gap: 3rem;
 
+  @include respond(phone) {
+    padding: 2rem 1rem;
+  }
+
   &__pictureHolder {
     width: 50%;
     margin: 0 auto;
@@ -50,6 +54,10 @@
   flex-direction: column;
   gap: 2rem;
 
+  @include respond(phone) {
+    max-width: 100%;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -87,13 +95,26 @@
 }
 
 .progressCard {
-  width: 25%;
+  min-width: 25%;
   padding: 3rem;
   border-radius: $borderRadiusMedium;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 2rem;
+
+  @include respond(desktop) {
+    padding: 2rem;
+  }
+
+  @include respond(tab-land) {
+    min-width: 35%;
+  }
+
+  @include respond(phone) {
+    min-width: 80%;
+  }
 
   &__progressList {
     list-style: none;
